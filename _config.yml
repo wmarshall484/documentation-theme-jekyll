@@ -15,6 +15,7 @@ project_folder: mydoc
 company_name: Apache Quarks Incubating
 footer_image_location: ../../common_images/company_logo.png
 github_editme_path: wmarshall484/documentation-theme-jekyll
+docsurl: https://github.com/quarks-edge/quarks.documentation
 disqus_shortname: idrbwjekyll
 # variables
 
@@ -53,7 +54,7 @@ feedback_email: wcmarsha@apache.org
 #  hard_wrap: false
 #  syntax_highlighter: rouge
 
-highlighter: pygments
+ highlighter: pygments
 markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "tables", "with_toc_data"]

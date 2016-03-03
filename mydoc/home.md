@@ -6,7 +6,7 @@ type: first_page
 homepage: true
 ---
 
-# Quarks Overview
+## Quarks Overview
 Devices and sensors are everywhere, and more are coming online every day. You need a way to analyze all of the data coming from your devices, but it can be expensive to transmit all of the data from a sensor to your central analytics engine.
 
 Quarks is an open source programming model and runtime for edge devices that enables you to analyze data and events at the device. When you analyze on the edge, you can:
@@ -29,14 +29,14 @@ The following use cases describe the primary situations in which you would use Q
 * *Embedded in an application server instance:* Analyze application server error logs in real time without impacting network traffic
 * *Server rooms and machine rooms:* Analyze machine health in real time without impacting network traffic or when bandwidth is limited
 
-## Deployment environments
+### Deployment environments
 The following environments have been tested for deployment on edge devices:
 
 * Java 8, including Raspberry Pi B and Pi2 B
 * Java 7
 * Android
 
-## Edge devices and back-end systems
+### Edge devices and back-end systems
 You can send data from a Quarks application to your back-end system when you need to perform analysis that cannot be performed on the edge device, such as:
 
 * Running a complex analytic algorithm that requires more resources, such as CPU or memory, than are available on the edge device.

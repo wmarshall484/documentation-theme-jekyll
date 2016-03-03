@@ -275,7 +275,7 @@ div#toc ul li ul {
 }
 
 div#toc ul li ul li::before {
-  content: "–  ";
+  content: "";
 }
 
 div#toc >ul::before {
@@ -624,7 +624,7 @@ ol li ul li {list-style-type: disc;}
 li img {clear:both; }
 
 div#toc ul li ul li {
-    list-style-type: none;
+    list-style-type: disc;
     margin: 5px 0px 0px 0px;
 }
 

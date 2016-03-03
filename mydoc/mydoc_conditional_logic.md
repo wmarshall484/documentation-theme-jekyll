@@ -41,35 +41,13 @@ audience: writers
 
 On a page in my site (it can be HTML or markdown), I can conditionalize content using the following:
 
-{% raw %}
 
-```liquid
-{% if site.audience == "writers" %}
-The writer audience should see this...
-{% elsif site.audience == "designers" %}
-The designer audience should see this ...
-{% endif %}
-```
-
-{% endraw %}
 
 This uses simple `if-elsif` logic to determine what is shown (note the spelling of `elsif`). The `else` statement handles all other conditions not handled by the `if` statements. 
 
 Here's an example of `if-else` logic inside a list:
 
-{% raw %}
-```liquid
-To bake a casserole:
 
-1. Gather the ingredients.
-{% if site.audience == "writer" %}
-2. Add in a pound of meat.
-{% elsif site.audience == "designer" %}
-3. Add in an extra can of beans.
-{% endif %}
-3. Bake in oven for 45 min.
-```
-{% endraw %}
 
 You don't need the `elsif` or `else`. You could just use an `if` (but be sure to close it with `endif`).
 
@@ -79,23 +57,11 @@ You can use more advanced Liquid markup for conditional logic, such as an `or` c
 
 For example, here's an example using `or`:
 
-{% raw %}
-```liquid
-{% if site.audience contains "vegan" or site.audience == "vegetarian" %}
-    // run this.
-{% endif %}
-```
-{% endraw %}
+
 
 Note that you have to specify the full condition each time. You can't shorten the above logic to the following:
 
-{% raw %}
-```liquid
-{% if site.audience contains "vegan" or "vegetarian" %}
-    // run this.
-{% endif %}
-```
-{% endraw %}
+
 
 This won't work.
 
@@ -103,13 +69,7 @@ This won't work.
 
 You can also use `unless` in your logic, like this:
 
-{% raw %}
-```liquid
-{% unless site.output == "pdf" %}
-...
-{% endunless %}
-```
-{% endraw %}
+
 
 When figuring out this logic, read it like this: "Run the code here *unless* this condition is satisfied." Or "If this condition is satisfied, don't run this code."
 
@@ -121,17 +81,7 @@ In this situation, if `site.print == true`, then the code will *not* be run here
 
 Here's an example of using conditional logic based on a value in a data file:
 
-{% raw %}
-```liquid
-{% if site.data.options.output == "alpha" %}
-show this content...
-{% elsif site.data.options.output == "beta" %}
-show this content...
-{% else %}
-this shows if neither of the above two if conditions are met.
-{% endif %}
-```
-{% endraw %}
+
 
 To use this, I would need to have a \_data folder called options where the `output` property is stored.
 
@@ -168,24 +118,11 @@ Then create a folder called \_data_beta.
 
 You can also create conditional logic based on the page namespace. For example, create a page with front matter as follows:
 
-{% raw %}
-```liquid
----
-layout: page
-user_plan: full
----
-```
-{% endraw %}
+
 
 Now you can run logic based on the conditional property in that page's front matter:
 
-{% raw %}
-```liquid
-{% if page.user_plan == "full" %}
-// run this code
-{% endif %}
-```
-{% endraw %}
+
 
 ## Conditions versus includes
 

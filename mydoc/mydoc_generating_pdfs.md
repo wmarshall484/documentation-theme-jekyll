@@ -177,7 +177,7 @@ type: first_page
 The default_print.html layout will change the class of the `body` element based on the type value in the page's frontmatter:
 
 {% raw %}
-```liquid
+```
 <body class="{% if page.type == "title"%}title{% elsif page.type == "frontmatter" %}frontmatter{% elsif page.type == "first_page" %}first_page{% endif %} print">
 ```
 {% endraw %}

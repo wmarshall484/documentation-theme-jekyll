@@ -58,7 +58,7 @@ The code in the theme's sidebar.html file (in the \_includes folder) iterates th
 What I've added in this theme is some special logic that checks if the sidebar items meet the right attribute conditions. As a result, the sidebar.html file has code that looks like this:
 
 {% raw %}
-```liquid
+```
  {% include custom/conditions.html %}
     {% for entry in sidebar %}
     {% for subcategory in entry.subcategories %}
@@ -75,7 +75,7 @@ If you look at the code above, you'll see that `audience`, `product`, `platform`
 This is where the conditions.html file (inside \_includes) comes into play. `audience` is a variable defined in the conditions.html file. If you open up conditions.html, you'll see something like this:
 
 {% raw %}
-```liquid
+```
 {% if site.project == "mydoc_writers" %}
 {% assign audience = "writers" %}
 {% assign sidebar = site.data.mydoc.mydoc_sidebar.entries %}

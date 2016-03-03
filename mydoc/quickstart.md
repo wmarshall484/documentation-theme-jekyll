@@ -1,8 +1,5 @@
 ---
-layout: docs
 title: Quickstart IBM Watson IoT Platform Sample
-description: Connecting Quarks to Quickstart service on IBM Watson IoT Platform.
-weight: 15
 ---
 
 # Quarks to Quickstart Quickly!

@@ -37,7 +37,7 @@ A collection is another content type that extends Jekyll beyond the use of pages
 
 Add the following information to your configuration file to declare your collection:
 
-```liquid
+```
 collections:
   tooltips:
     output: false
@@ -64,7 +64,7 @@ Create pages inside your new tooltips collection (that is, inside the \_tooltips
 Here's an example:
 
 {%raw%}
-```liquid
+```
 ---
 id: basketball
 product: mydoc

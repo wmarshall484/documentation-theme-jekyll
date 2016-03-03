@@ -45,7 +45,7 @@ In the attributes for each sidebar item, if you use `external_url` instead of `u
 For example, the sidebar.html file contains the following code:
 
 {% raw %}
-```liquid
+```
 {% if item.external_url %}
     <li><a href="{{item.external_url}}" target="_blank">{{subcategory.title}}</a></li>
     {% elsif page.url == item.url %}
@@ -61,7 +61,7 @@ The sidebar.html file inserts an `active` class into the sidebar element when th
 For example, the sidebar.html file contains the following code:
 
 {% raw %}
-```liquid
+```
     {% elsif page.url == item.url %}
     <li class="active"><a href="{{item.url | prepend: ".."}}">{{item.title}}</a></li>
     {% else %}

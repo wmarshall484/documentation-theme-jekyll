@@ -1,5 +1,6 @@
 ---
 title: Getting Started
+toc: false
 ---
 
 # Getting started with Quarks

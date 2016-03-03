@@ -70,7 +70,7 @@ hr_shaded: '<hr class="shaded"/>'
 This means you can insert a tip, note, warning, or important alert simply by using these tags:
 
 {% raw %}
-```liquid
+```
 {{site.data.alerts.note}} Add your note here. {{site.data.alerts.end}}
 ```
 {% endraw %}

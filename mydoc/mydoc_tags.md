@@ -40,7 +40,7 @@ Tags have a few components.
 
 1. First make sure you configure a few details in the conditions.html file. In particular, see this setting:
 	{% raw %}
-	```liquid
+	```
 	{% assign projectTags = site.data.tags_doc.allowed-tags %}
 	```
 	{% endraw %}
@@ -65,7 +65,7 @@ Tags have a few components.
 	Each tag archive file needs only this:
 	
 	{% raw %}
-	```liquid
+	```
 	---
     title: "Getting Started Pages"
     tagName: getting_started
@@ -105,7 +105,7 @@ You can change the button color by changing the class on the button from `btn-in
 If you want to retrieve pages outside of a particular tag_archive page, you could use this code:
 
 {% raw %}
-```liquid
+```
 Getting started pages: 
 <ul>
 {% for page in site.pages %}
@@ -134,7 +134,7 @@ Getting started pages:
 
 If you want to sort the pages alphabetically, you have to apply a `sort` filter:
 
-```liquid
+```
 {% raw %}
 Getting started pages:
 <ul>

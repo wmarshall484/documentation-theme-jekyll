@@ -49,7 +49,7 @@ name:
 **Markdown + Liquid:**
 
 {% raw %}
-```liquid
+```
 Husband's name: {{site.data.mydoc.samplelist.name.husband}}
 
 Wife's name: {{site.data.mydoc.samplelist.name.wife}}
@@ -84,7 +84,7 @@ block: |
 
 **Markdown:**
 
-```liquid
+```
 **Feedback**
 {{site.data.mydoc.samplelist.feedback}}
 
@@ -118,7 +118,7 @@ bikes:
 **Markdown + Liquid:**
 
 {% raw %}
-```liquid
+```
 {% for item in site.data.mydoc.samplelist.bikes %}
 * {{item.title}}
 {% endfor %}
@@ -201,7 +201,7 @@ toc:
 **Markdown + Liquid:**
 
 {% raw %}
-```liquid
+```
 {% for item in site.data.mydoc.samplelist.toc %}
 <h3>{{item.title}}</h3>
 <ul>
@@ -238,7 +238,7 @@ myref: *hello
 **Markdown:**
 
 {% raw %}
-```liquid
+```
 {{ site.data.mydoc.samplelist.myref }}
 ```
 {% endraw %}
@@ -300,7 +300,7 @@ numbercolors:
 **Markdown + Liquid:**
 
 {% raw %}
-```liquid
+```
 {{ site.data.mydoc.samplelist.numbercolors[0].properties }}
 ```
 {% endraw %}
@@ -342,7 +342,7 @@ mypages:
 **Markdown + Liquid:**
 
 {% raw %}
-```liquid
+```
 {% for sec in site.data.mydoc.samplelist.mypages %}
 {% if sec.audience == "writers" %}
 * {{sec.url}}
@@ -364,7 +364,7 @@ This example shows how you can use conditions in order to selectively get the YA
 Now let's adjust the condition just a little. Let's add a second condition so that the `audience` property has to be `writers` and the `product` property has to be gizmo. This is how you would write it:
 
 {% raw %}
-```liquid
+```
 {% for sec in site.data.mydoc.samplelist.mypages %}
 {% if sec.audience == "writers" and sec.product == "gizmo" %}
 * {{sec.url}}

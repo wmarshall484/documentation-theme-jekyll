@@ -1,7 +1,7 @@
 ---
 title: FAQ  
+toc: false
 ---
-
 ## What Is Quarks?
 
 Quarks provides APIs and a lightweight runtime to analyze streaming data at the edge.

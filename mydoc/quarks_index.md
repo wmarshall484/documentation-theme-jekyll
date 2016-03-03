@@ -1,8 +1,10 @@
 ---
-title:  Quarks Documentation
+Title:  Quarks Documentation
+tags: [getting_started]
+audience: field engineers, clients
+type: first_page
+homepage: true
 ---
-
-# Quarks Documentation
 Documentation for Quarks Project
 
 # New Documentation

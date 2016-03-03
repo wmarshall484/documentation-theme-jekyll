@@ -52,14 +52,6 @@ entries:
       version: all
       output: web, pdf
 
-    - title: About the theme author
-      url: /mydoc/mydoc_about.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web
-
   - title: Get started
     audience: writers, designers
     platform: all
@@ -68,7 +60,7 @@ entries:
     output: web, pdf
     items:
     - title: 1. Getting started guide
-      url: /mydoc/quarks_getting_started.html
+      url: /mydoc/quarks-getting-started.html
       audience: writers, designers
       platform: all
       product: all
@@ -76,7 +68,7 @@ entries:
       output: web, pdf
 
     - title: 2. Common Operations
-      url: /mydoc/common-quarks-operations.md
+      url: /mydoc/common-quarks-operations.html
       audience: writers, designers
       platform: all
       product: all
@@ -93,30 +85,6 @@ entries:
 
     - title: 4. Sample programs
       url: /mydoc/samples.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web, pdf
-
-    - title: 5. Set the configuration options
-      url: /mydoc/mydoc_configuration_settings.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web, pdf
-
-    - title: 6. Customize the conditions file
-      url: /mydoc/mydoc_conditions_file_customization.html
-      audience: writers, designers
-      platform: all
-      product: all
-      version: all
-      output: web, pdf
-
-    - title: 7. Configure the sidebar
-      url: /mydoc/mydoc_configure_sidebar.html
       audience: writers, designers
       platform: all
       product: all

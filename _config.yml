@@ -8,8 +8,8 @@ platform: all
 version: all
 output: web
 destination: ../doc_outputs/mydoc/designers
-topnav_title: Quarks
-homepage_title: Quarks
+topnav_title: Incubating Apache Quarks
+homepage_title: Incubating Apache Quarks
 site_title: Quarks
 project_folder: mydoc
 company_name: Incubating Apache Quarks

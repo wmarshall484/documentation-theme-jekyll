@@ -4,7 +4,7 @@ tags: [formatting]
 keywords: images, screenshots, vectors, svg, markdown syntax
 last_updated: November 30, 2015
 summary: ""
-published: false
+published: true
 ---
 
 In this page, I'm going to explain some of the inner workings of Jekyll, including some weaknesses of the theme that could be addressed. These points aren't in any particular order.
